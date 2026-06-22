@@ -216,7 +216,7 @@
         "section_height_custom": 5,
         "color_scheme": "scheme-6",
         "toggle_overlay": true,
-        "overlay_color": "#03030314",
+        "overlay_color": "#03030399",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "blurred_reflection": false,
