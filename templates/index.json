@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero_p9CmMG": {
@@ -122,7 +113,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Mantas, velas e cerâmica para transformar dias frios em rituais de aconchego.</p>",
+                    "text": "<p>Mantas, velas e luminárias com <strong>33% OFF</strong> para transformar dias frios em rituais de aconchego.</p>",
                     "width": "100%",
                     "max_width": "narrow",
                     "alignment": "center",
@@ -147,7 +138,7 @@
                 "button_hero": {
                   "type": "button",
                   "settings": {
-                    "label": "Comprar agora",
+                    "label": "Aproveitar a oferta",
                     "link": "shopify://collections/all",
                     "open_in_new_tab": false,
                     "style_class": "button",
@@ -157,9 +148,36 @@
                     "custom_width_mobile": 100
                   },
                   "blocks": {}
+                },
+                "text_hero_eyebrow": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Coleção de Inverno · 33% OFF</p>",
+                    "width": "100%",
+                    "max_width": "narrow",
+                    "alignment": "center",
+                    "type_preset": "h6",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
+                "text_hero_eyebrow",
                 "text_qHY3XF",
                 "text_hero_sub",
                 "button_hero"
