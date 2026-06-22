@@ -19,6 +19,13 @@
     assign show_compare_price = true
   endif
 
+  assign discount_percent = 0
+  assign savings_amount = 0
+  if show_compare_price
+    assign discount_percent = compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | round
+    assign savings_amount = compare_at_price | minus: price
+  endif
+
   if product_resource == blank
     assign price = 1999
   endif
@@ -126,6 +133,9 @@
       {% endif %}
     </div>
   {% endif %}
+  {%- if show_compare_price and is_product_card == false and discount_percent > 0 -%}
+    <span class="price__savings">Economize {{ savings_amount | money }} ({{ discount_percent }}%)</span>
+  {%- endif -%}
   {%- if selected_variant.unit_price and show_unit_price %}
     {%- liquid
       if use_currency

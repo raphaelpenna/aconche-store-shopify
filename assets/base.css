@@ -2391,6 +2391,14 @@ product-price.text-block:is(.h1, .h2, .h3, .h4, .h5, .h6) .volume-pricing-note {
   display: none;
 }
 
+.price__savings {
+  display: inline-block;
+  margin-block-start: 4px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #2e7d52;
+}
+
 form.payment-terms {
   padding-top: 0.5em;
   font-size: min(0.85em, var(--font-paragraph--size));
