@@ -11,6 +11,63 @@
   "type": "header",
   "name": "Header",
   "sections": {
+    "announcement_bar": {
+      "type": "header-announcements",
+      "blocks": {
+        "announcement_1": {
+          "type": "_announcement",
+          "settings": {
+            "text": "⚡ SALE DE INVERNO · 33% OFF em tudo",
+            "link": "shopify://collections/all",
+            "font": "var(--font-subheading--family)",
+            "font_size": "0.875rem",
+            "weight": "600",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
+        },
+        "announcement_2": {
+          "type": "_announcement",
+          "settings": {
+            "text": "Pronta entrega · Pagamento 100% seguro",
+            "link": "",
+            "font": "var(--font-subheading--family)",
+            "font_size": "0.875rem",
+            "weight": "400",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
+        },
+        "announcement_3": {
+          "type": "_announcement",
+          "settings": {
+            "text": "Aproveite enquanto dura ❄️",
+            "link": "shopify://collections/all",
+            "font": "var(--font-subheading--family)",
+            "font_size": "0.875rem",
+            "weight": "400",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "announcement_1",
+        "announcement_2",
+        "announcement_3"
+      ],
+      "settings": {
+        "speed": 5,
+        "section_width": "full-width",
+        "color_scheme": "scheme-4",
+        "divider_width": 0,
+        "padding-block-start": 12,
+        "padding-block-end": 12
+      }
+    },
     "header_section": {
       "type": "header",
       "blocks": {
@@ -29,7 +86,7 @@
           "static": true,
           "settings": {
             "menu": "main-menu",
-            "color_scheme": "",
+            "color_scheme": "scheme-1",
             "type_font_primary_size": "var(--font-size--body-md)",
             "menu_font_style": "inverse",
             "type_font_primary_link": "primary",
@@ -81,60 +138,6 @@
         "product_color_scheme": "default",
         "enable_transparent_header_collection": false,
         "collection_color_scheme": "default"
-      }
-    },
-    "announcement_bar": {
-      "type": "header-announcements",
-      "blocks": {
-        "announcement_1": {
-          "type": "_announcement",
-          "settings": {
-            "text": "⚡ SALE DE INVERNO · 33% OFF em tudo",
-            "link": "shopify://collections/all",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.875rem",
-            "weight": "600",
-            "letter_spacing": "normal",
-            "case": "none"
-          }
-        },
-        "announcement_2": {
-          "type": "_announcement",
-          "settings": {
-            "text": "Pronta entrega · Pagamento 100% seguro",
-            "link": "",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.875rem",
-            "weight": "400",
-            "letter_spacing": "normal",
-            "case": "none"
-          }
-        },
-        "announcement_3": {
-          "type": "_announcement",
-          "settings": {
-            "text": "Aproveite enquanto dura ❄️",
-            "link": "shopify://collections/all",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.875rem",
-            "weight": "400",
-            "letter_spacing": "normal",
-            "case": "none"
-          }
-        }
-      },
-      "block_order": [
-        "announcement_1",
-        "announcement_2",
-        "announcement_3"
-      ],
-      "settings": {
-        "speed": 5,
-        "section_width": "full-width",
-        "color_scheme": "scheme-4",
-        "divider_width": 0,
-        "padding-block-start": 12,
-        "padding-block-end": 12
       }
     }
   },
