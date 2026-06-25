@@ -86,7 +86,7 @@
   {%- if block_settings.show_local_installments and selected_variant != blank and selected_variant.price > 0 -%}
     {%- assign inst_count = block_settings.installments_count | default: 12 -%}
     {%- assign inst_value = selected_variant.price | divided_by: inst_count -%}
-    <div class="installments installments--local">
+    <div class="price-installments-local" style="padding-block-start: 0.4em; font-size: min(0.9em, var(--font-paragraph--size)); color: rgb(var(--color-foreground-rgb) / var(--opacity-subdued-text));">
       em até {{ inst_count }}x de {{ inst_value | money }}{% if block_settings.installments_note != blank %} {{ block_settings.installments_note }}{% endif %}
     </div>
   {%- endif -%}
