@@ -139,6 +139,9 @@
                   "settings": {
                     "show_sale_price_first": true,
                     "show_installments": false,
+                    "show_local_installments": true,
+                    "installments_count": 12,
+                    "installments_note": "",
                     "show_tax_info": true,
                     "type_preset": "paragraph",
                     "width": "100%",
@@ -248,6 +251,32 @@
               },
               "blocks": {}
             },
+            "delivery_info": {
+              "type": "text",
+              "name": "Prazo de entrega",
+              "settings": {
+                "text": "<p>📦 <strong>Pronta entrega.</strong> Você recebe em <strong>7 a 15 dias úteis</strong> em todo o Brasil.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 8,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_trust": {
               "type": "text",
               "name": "Selos de confiança",
@@ -280,6 +309,7 @@
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
+            "delivery_info",
             "text_trust",
             "text_aEtTtq"
           ]
@@ -304,7 +334,7 @@
           "type": "text",
           "name": "t:names.header",
           "settings": {
-            "text": "<h3>You may also like </h3>",
+            "text": "<h3>Você também pode gostar</h3>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
